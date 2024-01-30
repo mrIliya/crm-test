@@ -1,0 +1,134 @@
+.aside {
+    max-width: 306px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    transition: all linear .5s;
+
+    &__button{
+        position: absolute;
+        top: 40px;
+        right: -40px;
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #fff;
+        border-radius: 0 8px 8px 0;
+        display: none;
+    }
+
+    &__inner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 28px 76px 28px;
+        transition: all linear .5s;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 75px;
+    }
+
+    &__version {
+        margin-left: 4px;
+        margin-bottom: 4px;
+        font-size: 10px;
+        color: #838383;
+    }
+}
+
+.aside-menu {
+    margin-bottom: auto;
+
+    &__line {
+        &+li {
+            margin-top: 18px;
+        }
+    }
+
+    &__btn {
+        height: 46px;
+        width: 100%;
+        padding: 11px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-radius: 8px;
+        transition: all ease-in-out .4s;
+        font-size: 14px;
+        color: #9197B3;
+
+        &:hover {
+            background-color: #5932EA;
+            color: #fff;
+
+            .aside-menu__icon {
+
+                &.stroke-icon {
+                    path {
+                        stroke: #fff;
+
+                    }
+                }
+
+                &.fill-icon {
+
+                    path {
+                        fill: #fff;
+
+                    }
+                }
+            }
+        }
+    }
+
+    &__icon {
+        transition: inherit;
+    }
+
+    &__text {
+        margin-right: auto;
+        margin-left: 14px;
+    }
+}
+
+.aside-user {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+    &__pic{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 42px;
+        height: 42px;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__name{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &__position{
+        font-size: 14px;
+        color: #757575;
+        line-height: 18px;
+    }
+}
